@@ -5,11 +5,11 @@ int TakeNum(int num)
     int result2 = num / 10;
     if (result1 > result2)
     {
-        return result1
+        return result1;
     }
     else
     {
-        return result2
+        return result2;
     }
     Console.WriteLine(num);
     return num % 10;
