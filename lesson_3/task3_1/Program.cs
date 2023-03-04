@@ -10,12 +10,14 @@ void Quarters(int num)
     else if (num == 3)
         Console.WriteLine("x < 0 && y < 0");
     else if (num == 4)
-        Console.WriteLine("III");
-    else if (x > 0 && y < 0)
-        Console.WriteLine("IV");
+        Console.WriteLine("x > 0 && y < 0");
+    else 
+        Console.WriteLine("error");
 }
 
-int num_1 = int.Parse(Console.ReadLine()!);
-int num_2 = int.Parse(Console.ReadLine()!);
-Quarters(num_1, num_2);
+int num1 = int.Parse(Console.ReadLine()!);
+// int num2 = int.Parse(Console.ReadLine()!);
+// int num3 = int.Parse(Console.RaedLine()!);
+// int num4 = int.Parse(Console.ReadLine()!);
+Quarters(num1);
 
