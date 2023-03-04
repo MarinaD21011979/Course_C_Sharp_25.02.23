@@ -1,12 +1,12 @@
 ﻿// 2. Напишите программу, которая принимает на вход координаты
 //    двух точек и находит расстояние между ними в 2D пространстве.
 
-double Examples (double x1, double y1, double x2, double y2)
+double Examples (double x1, double y1, double x2, double y2) // координаты в 2Д
 {
-    return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+    return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2)); 
 }
-Console.WriteLine(Examples(3, 6, 2, 1));
-
+Console.WriteLine(Examples(3, 6, 2, 1)); // переданы явные значения
+// математический модуль, Sqrt - квадратный корень, степень 2 тк 2Д пространство
 
 
 
