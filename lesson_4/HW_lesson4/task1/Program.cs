@@ -3,7 +3,7 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-double PowNum(int a, int b)
+double PowNum(int a, int b) // название функции и что нужно для работы
 {
     double n_pow = 1; // 1 потмоу что произведение
     int b_abs = Math.Abs(b);
