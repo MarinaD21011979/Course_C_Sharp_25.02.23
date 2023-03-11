@@ -3,10 +3,11 @@
 
 int NumDig(int num)
 {
-    int dig1 = 0;
-    for (int i = 0; num > 0; i++){
+    int dig1 = 0; // объявили переменную
+    for (int i = 0; num > 0; i++) // в фор располагаются 3 элемента: счетчик, условие, увеличение
+    {
         num = num / 10;
-        dig1 = 1;
+        dig1 += i;
     }
     return dig1;
 }
