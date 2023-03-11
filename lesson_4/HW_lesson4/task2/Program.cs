@@ -8,16 +8,16 @@
 int NumDig(int num)
 {
     int dig1 = 0; // объявили переменную
-    for (int i = 0; num > 0; i++) // в фор располагаются 3 элемента: счетчик, условие, увеличение
+    while (num > 0) // цикл пока число больше нуля делаем проверку в {}
     {
-        num = num / 10;
-        dig1 += i;
+        dig1 += num % 10;
+        num /= 10;
     }
-    return dig1;
+    return dig1; // возвращаем переменную
 }
 
-int A = int.Parse(Console.ReadLine()!);
-Console.WriteLine(NumDig(A));
+int dig1 = int.Parse(Console.ReadLine()!);
+Console.WriteLine(NumDig(dig1));
 
 
 
