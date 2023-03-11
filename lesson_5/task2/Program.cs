@@ -38,8 +38,8 @@ void SumPosNeg(int[] arr, int num1)
 int num = int.Parse(Console.ReadLine()!);
 int start = int.Parse(Console.ReadLine()!);
 int stop = int.Parse(Console.ReadLine()!);
-int num1 = int.Parse(Console.ReadLine()!);	
-int[] mass = MassNums(num, start, stop);
+int num1 = int.Parse(Console.ReadLine()!);	// число, которое мы проверяем в массиве
+int[] mass = MassNums(num, start, stop); // сборка массива: кол-во цифр, начало и конец
 Print(mass);
 SumPosNeg(mass, num1);
 	
