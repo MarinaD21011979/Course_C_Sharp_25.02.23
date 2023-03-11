@@ -4,17 +4,20 @@
 // 82 -> 10
 // 9012 -> 12
 
-int SumDigits (int num)
+// найти количество знаков в числе
+int NumDig(int num)
 {
-    int allSum = 0; // если сумма, то нициализация 0, произведение = 1
-    for (int i = 1; num >= 0; i++)
+    int dig1 = 0; // объявили переменную
+    for (int i = 0; num > 0; i++) // в фор располагаются 3 элемента: счетчик, условие, увеличение
     {
-        num = num / 10; 
+        num = num / 10;
+        dig1 += i;
     }
-    return result;
+    return dig1;
 }
-int result = int.Parse(Console.ReadLine()!);
-SumDigits(result);
-Console.WriteLine(result);
+
+int A = int.Parse(Console.ReadLine()!);
+Console.WriteLine(NumDig(A));
+
 
 
