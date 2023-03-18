@@ -39,6 +39,3 @@ int size = int.Parse(Console.ReadLine()!);
 int[] arr;
 arr = FillMass(size);
 Print(arr);
-
-
-
