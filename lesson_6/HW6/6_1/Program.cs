@@ -1,29 +1,44 @@
-﻿// Задайте массив заполненный случайными положительными трёхзначными числами. 
-// Напишите программу, которая покажет количество чётных чисел в массиве.
-// [345, 897, 568, 234] -> 2
+﻿// Пользователь вводит с клавиатуры M чисел. 
+// Посчитайте, сколько чисел больше 0 ввёл пользователь.
+// 0, 7, 8, -2, -2 -> 2
+// 1, -7, 567, 89, 223-> 3
+// введенное число отдается в цикл, внутри цикла идет проверка, затем выводится результат
+
+Console.WriteLine("Введите пять чисел");
 
 void Print(int[] arr)
 {
     int size = arr.Length;
-
     for (int i = 0; i < size; i++)
-        Console.Write($"{arr[i]} ");
+        Console.WriteLine($"{arr[i]}");
     Console.WriteLine();
 }
 
-int[] MassNums(int size, int from, int to)
+int[] FillMass(int size)
 {
-    int[] arr = new int[size];
-
+    int[] arr = new int [size];
     for (int i = 0; i < size; i++)
-        arr[i] = new Random().Next(from, to);
+    {
+        arr[i] = size; 
+    }
     return arr;
 }
 
+int CheckPositiv(int[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i] > 0)
+        count ++;
+    }  
+    return count;
+}
 
-int num = int.Parse(Console.ReadLine()!);
-int start = int.Parse(Console.ReadLine()!);
-int stop = int.Parse(Console.ReadLine()!);
+int size = int.Parse(Console.ReadLine()!);
+int[] arr;
+arr = FillMass(size);
+Print(arr);
 
-int[] mass = MassNums(num, start, stop);
-Print(mass);
+
+
