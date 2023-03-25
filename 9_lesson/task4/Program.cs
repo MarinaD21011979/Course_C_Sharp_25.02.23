@@ -9,4 +9,4 @@ int ValueSet(int A, int B)
 
 int num1 = int.Parse(Console.ReadLine()!);
 int num2 = int.Parse(Console.ReadLine()!);
-ValueSet(num1, num2);
+Console.WriteLine(ValueSet(num1, num2));
