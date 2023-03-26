@@ -1,4 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// задайте значение N. Напишите программу, которая выведет 
+// все натуральные числа в промежутке от 1 до N при помощи рекурсии
 
 void ValueSet(int N)
 {
